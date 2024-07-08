@@ -5,5 +5,5 @@
 2. [Traffic light 2](traffic_light_2.md)
 
 ### Java-week 2
-1. [Traffic light](week2%20traffic%20light.js)
-2. [Experiment](week2%20experiment.js)
+1. [Traffic light](traffic%20light.md)
+2. [Experiment](experiment.md)
