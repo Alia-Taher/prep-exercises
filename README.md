@@ -9,5 +9,5 @@
 2. [Experiment](experiment.md)
 
 ### Java-week 3 
-1. [Find mentors](prep-exercises\1-hyf-program\1-find-mentors.js)
-2. [Class list](prep-exercises\1-hyf-program\2-class-list.js)
+1. [Find mentors](1-find-mentors.js)
+2. [Class list](2-class-list.js)
