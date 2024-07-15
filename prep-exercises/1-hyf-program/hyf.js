@@ -46,11 +46,7 @@ export const students = [
   { name: "Fede", class: "class33", gitHubName: "fedefu", graduated: false },
   { name: "Tjebbe", class: "class32", gitHubName: "Tjebbee", graduated: true },
   { name: "Rob", class: "class34", gitHubName: "robvk", graduated: false },
-  {
-    name: "Wouter",
-    class: "class35",
-    gitHubName: "wouterkleijn",
-    graduated: false,
+  { name: "Wouter", class: "class35", gitHubName: "wouterkleijn",graduated: false,
   },
 ];
 

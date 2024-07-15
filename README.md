@@ -7,3 +7,7 @@
 ### Java-week 2
 1. [Traffic light](traffic%20light.md)
 2. [Experiment](experiment.md)
+
+### Java-week 3 
+1. [Find mentors](prep-exercises\1-hyf-program\1-find-mentors.js)
+2. [Class list](prep-exercises\1-hyf-program\2-class-list.js)
