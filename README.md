@@ -11,3 +11,9 @@
 ### Java-week 3 
 1. [Find mentors](1-find-mentors.js)
 2. [Class list](2-class-list.js)
+
+### Java-week 4
+1. [Classes](classes.md)
+2. [Objects](objects.md)
+3. [Object Shared Methods](object-shared-methods.md)
+4. [Prototypes](prototype.md)
