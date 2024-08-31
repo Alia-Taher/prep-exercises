@@ -25,3 +25,7 @@
 ### Browsers-week 1
 
 1. [Game of life](./Browser-week1/game%20of%20life%20.md)
+
+### Using API's
+
+1. [Walking dancing cat](./API's/Cat-Walk.md) 
