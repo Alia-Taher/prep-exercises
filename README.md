@@ -26,6 +26,12 @@
 
 1. [Game of life](./Browser-week1/game%20of%20life%20.md)
 
-### Using API's
+### Using API's - week 1
 
 1. [Walking dancing cat](./API's/Cat-Walk.md) 
+
+###  Using API's - week 2
+
+1. [Walking cat](./API's/using%20API's%20week%202/catwalk/Catwalk.md)
+
+2. [Pokemon](./API's/using%20API's%20week%202/pokemon-fetch/pokemon.md)
