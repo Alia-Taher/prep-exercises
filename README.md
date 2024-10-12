@@ -35,3 +35,9 @@
 1. [Walking cat](./API's/using%20API's%20week%202/catwalk/Catwalk.md)
 
 2. [Pokemon](./API's/using%20API's%20week%202/pokemon-fetch/pokemon.md)
+
+
+
+###  Databases  - week 1
+
+1. [Database schema ](./Databases/prep.md) 
