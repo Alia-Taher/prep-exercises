@@ -38,6 +38,7 @@
 
 
 
-###  Databases  - week 1
+###  Databases  
 
-1. [Database schema ](./Databases/prep.md) 
+1. [Database schema  week 1](./Databases/prep.md) 
+2. [Database week 2](./Databases/recipe.js)
