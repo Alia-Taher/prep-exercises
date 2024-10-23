@@ -1,21 +1,21 @@
 # Preparation Exercises
 
-### Java-week 1
+### Javascript-week 1
 
 1. [Traffic light 1](./javascript/traffic_light_1.md)
 2. [Traffic light 2](./javascript/traffic_light_2.md)
 
-### Java-week 2
+### Javascript-week 2
 
 1. [Traffic light](./javascript/traffic%20light.md)
 2. [Experiment](./javascript/experiment.md)
 
-### Java-week 3
+### Javascript-week 3
 
 1. [Find mentors](./javascript/1-find-mentors.js)
 2. [Class list](./javascript/2-class-list.js)
 
-### Java-week 4
+### Javascript-week 4
 
 1. [Classes](./javascript/classes.md)
 2. [Objects](./javascript/objects.md)
@@ -28,17 +28,15 @@
 
 ### Using API's - week 1
 
-1. [Walking dancing cat](./API's/Cat-Walk.md) 
+1. [Walking dancing cat](./API's/Cat-Walk.md)
 
-###  Using API's - week 2
+### Using API's - week 2
 
 1. [Walking cat](./API's/using%20API's%20week%202/catwalk/Catwalk.md)
 
 2. [Pokemon](./API's/using%20API's%20week%202/pokemon-fetch/pokemon.md)
 
+### Databases  
 
-
-###  Databases  
-
-1. [Database schema  week 1](./Databases/prep.md) 
+1. [Database schema  week 1](./Databases/prep.md)
 2. [Database week 2](./Databases/recipe.js)
