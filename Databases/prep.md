@@ -2,26 +2,26 @@
 
 
 -- Recipes table
-CREATE TABLE recipes (
+CREATE TABLE recipe (
     recipe_id INT PRIMARY KEY,
     name TEXT NOT NULL,
     description TEXT
 );
 
 -- Categories table
-CREATE TABLE categories (
+CREATE TABLE category (
     category_id INT PRIMARY KEY,
     name TEXT NOT NULL
 );
 
 -- Ingredients table
-CREATE TABLE ingredients (
+CREATE TABLE ingredient (
     ingredient_id INT PRIMARY KEY,
     name TEXT NOT NULL
 );
 
 -- Steps table
-CREATE TABLE steps (
+CREATE TABLE step (
     step_id INT PRIMARY KEY,
     description TEXT NOT NULL
 );
