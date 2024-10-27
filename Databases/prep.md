@@ -1,5 +1,7 @@
 ```SQL 
 
+--week 3 
+-- the database meet 3NF 
 
 -- Recipes table
 CREATE TABLE recipe (

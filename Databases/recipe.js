@@ -60,11 +60,10 @@ async function main() {
   await connection.query(createTableCategories);
   await connection.query(createTableIngredients);
   await connection.query(createTableSteps);
-  await connection.query(createTableRecipes);  
+  await connection.query(createTableRecipes);
   await connection.query(createTableRecipeCategories);
   await connection.query(createTableRecipeIngredients);
   await connection.query(createTableRecipeSteps);
-
 
   const insertCategory =
     "INSERT INTO category (category) VALUES ('Dessert'),('Main Course'), ('Afghan'), ('Meat')";
@@ -101,7 +100,6 @@ async function main() {
 
   await connection.query(insertRecipe);
 
-
   const insertRecipeCategories = `
     INSERT INTO recipe_categories (recipe_id, category_id) VALUES
     (1, 1), 
@@ -109,9 +107,100 @@ async function main() {
     (2, 4)   
   `;
   await connection.query(insertRecipeCategories);
+
+  const insertRecipeIngredients = `
+    INSERT INTO recipe_ingredients (recipe_id, ingredient_id) VALUES
+    (1, 1),
+    (1, 2),
+    (1, 3),
+    (1, 4),
+    (1, 5),
+    (1, 6),
+    (1, 7),
+    (1, 8),
+    (1, 9),
+    (1, 10),
+    (2, 11),
+    (2, 12),
+    (2, 13),
+    (2, 14),
+    (2, 15),
+    (2, 16),
+    (2, 17),
+    (2, 1),
+    (2, 8)
+  `;
+  await connection.query(insertRecipeIngredients);
+
+  const insertRecipeSteps = `
+    INSERT INTO recipe_steps (recipe_id, step_id) VALUES
+    (1, 11),
+    (1, 12),
+    (1, 13),
+    (1, 14),
+    (1, 15),
+    (1, 16),
+    (1, 17),
+    (1, 18),
+    (2, 1),
+    (2, 2),
+    (2, 3),
+    (2, 4),
+    (2, 5),
+    (2, 6),
+    (2, 7),
+    (2, 8),
+    (2, 9),
+    (2, 10)
+  `;
+  await connection.query(insertRecipeSteps);
+
+  const queries = [
+    {
+      description: " All Afghan Recipes with beef",
+      query: `SELECT r.title AS recipe_name, c.category AS category_name 
+      FROM recipe r
+      JOIN recipe_categories rc ON r.recipe_id = rc.recipe_id
+      JOIN category c ON rc.category_id = c.category_id
+      JOIN recipe_ingredients ri ON r.recipe_id = ri.recipe_id
+      JOIN ingredients i ON ri.ingredient_id = i.ingredient_id
+      WHERE c.category = 'Afghan'
+        AND i.ingredient LIKE '%beef%';
+`,
+    },
+    {
+      description: "All beef and Afghan Recipes",
+      query: `SELECT DISTINCT r.title AS recipe_name, c.category AS category_name
+          FROM recipe r
+          LEFT JOIN recipe_categories rc ON r.recipe_id = rc.recipe_id
+          LEFT JOIN category c ON rc.category_id = c.category_id
+          LEFT JOIN recipe_ingredients ri ON r.recipe_id = ri.recipe_id
+          LEFT JOIN ingredients i ON ri.ingredient_id = i.ingredient_id
+          WHERE c.category = 'Afghan' AND i.ingredient LIKE '%beef%';
+
+`,
+    },
+    {
+      description: "All Cakes that Need to be Baked for 30-35 minutes",
+      query: `SELECT r.title AS recipe_name, c.category AS category_name
+          FROM recipe r
+          JOIN recipe_categories rc ON r.recipe_id = rc.recipe_id         
+          JOIN category c ON rc.category_id = c.category_id               
+          JOIN recipe_steps rs ON r.recipe_id = rs.recipe_id            
+          JOIN steps s ON rs.step_id = s.step_id                          
+          WHERE c.category = 'Dessert'                                    
+            AND s.step LIKE '%Bake for 30-35 minutes%';                                     
+          `,
+    },
+  ];
+
+  for (const { description, query } of queries) {
+    console.log(description);
+    const [rows] = await connection.query(query);
+    console.table(rows);
+  }
+
   connection.end();
 }
-
-
 
 main();
